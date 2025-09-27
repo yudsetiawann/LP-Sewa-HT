@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const waLink = document.querySelector(".cta-pulse");
     if (waLink) {
       const message = `Halo, saya ingin sewa ${jumlahHT} unit HT selama ${jumlahHari} hari. Total estimasi: ${estimasiHargaSpan.textContent}.`;
-      waLink.href = `https://wa.me/6285186072004?text=${encodeURIComponent(message)}`;
+      waLink.href = `https://wa.me/6282115466796?text=${encodeURIComponent(message)}`;
     }
   }
 
@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
   jumlahHtInput.addEventListener("input", hitungEstimasi);
   jumlahHariInput.addEventListener("input", hitungEstimasi);
   hitungEstimasi(); // Panggil saat dimuat untuk menampilkan hasil awal
-
 
   // 2. Interaktivitas Accordion FAQ
   const accordionHeaders = document.querySelectorAll(".accordion-header");
