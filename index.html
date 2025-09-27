@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sewa HT Cepat & Mudah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-blue-600">Sewa<span>HT</span></a>
+        <div class="hidden md:flex space-x-6">
+          <a href="#fitur" class="text-gray-600 hover:text-blue-600 transition duration-300">Fitur</a>
+          <a href="#lokasi" class="text-gray-600 hover:text-blue-600 transition duration-300">Lokasi</a>
+          <a href="#faq" class="text-gray-600 hover:text-blue-600 transition duration-300">FAQ</a>
+        </div>
+        <a href="#pemesanan" class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300">Pesan Sekarang</a>
+      </nav>
+    </header>
+
+    <!-- <section class="bg-blue-50 py-20 md:py-32">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">Komunikasi <span class="text-blue-600">Lancar</span> untuk Acara Anda</h1>
+          <p class="text-xl text-gray-600 mb-8">Sewa HT berkualitas terbaik, siap pakai, dengan harga transparan. Ideal untuk Event, Produksi, dan Keamanan.</p>
+          <div id="pemesanan" class="bg-white p-6 rounded-lg shadow-xl inline-block">
+            <p class="text-lg font-semibold mb-3">Cek Estimasi Biaya Sewa:</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <p>Jumlah HT:</p>
+              <input type="number" id="jumlah-ht" value="10" min="1" class="w-full sm:w-1/2 p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Jumlah HT (Unit)" />
+              <p>Jumlah Hari:</p>
+              <input type="number" id="jumlah-hari" value="3" min="1" class="w-full sm:w-1/2 p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Lama Sewa (Hari)" />
+            </div>
+            <div class="mt-4">
+              <p class="text-2xl font-bold text-blue-600">Total Estimasi: <span id="estimasi-harga">Rp 0</span></p>
+            </div>
+            <a href="https://wa.me/NOMORANDA" target="_blank" class="mt-6 w-full inline-block text-center cta-pulse px-8 py-3 bg-green-500 text-white font-bold text-lg rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">
+              <i class="fab fa-whatsapp"></i> Pesan Via WhatsApp!
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:pl-12"></div>
+      </div>
+    </section> -->
+
+    <section class="bg-blue-50 py-20 md:py-32">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">Komunikasi <span class="text-blue-600">Lancar</span> untuk Acara Anda</h1>
+          <p class="text-xl text-gray-600 mb-8">Sewa HT berkualitas terbaik, siap pakai, dengan harga transparan. Ideal untuk Event, Produksi, dan Keamanan.</p>
+          <div id="pemesanan" class="bg-white p-6 rounded-lg shadow-xl inline-block">
+            <p class="text-lg font-semibold mb-3">Cek Estimasi Biaya Sewa:</p>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="jumlah-ht" class="text-sm font-medium text-gray-700">Jumlah HT (Unit):</label>
+                <input type="number" id="jumlah-ht" value="10" min="1" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Unit" />
+              </div>
+              <div>
+                <label for="jumlah-hari" class="text-sm font-medium text-gray-700">Lama Sewa (Hari):</label>
+                <input type="number" id="jumlah-hari" value="3" min="1" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Hari" />
+              </div>
+            </div>
+            <div class="mt-4">
+              <p class="text-2xl font-bold text-blue-600">Total Estimasi: <span id="estimasi-harga">Rp 0</span></p>
+            </div>
+            <a href="https://wa.me/NOMORANDA" target="_blank" class="mt-6 w-full inline-block text-center cta-pulse px-8 py-3 bg-green-500 text-white font-bold text-lg rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">
+              <i class="fab fa-whatsapp"></i> Pesan Via WhatsApp!
+            </a>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 md:pl-12 mt-10 md:mt-0 flex justify-center">
+          <img src="img/71NGyFgqUCL-removebg-preview.png" alt="Walkie Talkie" class="rounded-xl shadow-2xl max-h-96 object-contain hover-lift transition duration-500" />
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10">Kenapa Memilih Kami?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover-lift transition duration-500">
+            <i class="text-4xl text-blue-600 mb-4 fas fa-battery-full"></i>
+            <h3 class="text-xl font-semibold mb-3">Baterai Tahan Lama</h3>
+            <p class="text-gray-600">HT selalu disiapkan dengan baterai terisi penuh dan cadangan untuk kelancaran acara 24 jam.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover-lift transition duration-500">
+            <i class="text-4xl text-blue-600 mb-4 fas fa-headset"></i>
+            <h3 class="text-xl font-semibold mb-3">Aksesoris Lengkap</h3>
+            <p class="text-gray-600">Dilengkapi earpiece, charger, dan tas penyimpanan untuk kemudahan dan kenyamanan penggunaan.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover-lift transition duration-500">
+            <i class="text-4xl text-blue-600 mb-4 fas fa-check-circle"></i>
+            <h3 class="text-xl font-semibold mb-3">Unit Teruji</h3>
+            <p class="text-gray-600">Setiap unit HT melewati pemeriksaan fungsionalitas sebelum disewakan kepada Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="harga" class="py-16 bg-blue-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10">Pilihan Paket Harga Terbaik</h2>
+
+        <div class="flex justify-center mb-8 space-x-4">
+          <button class="tab-button bg-blue-600 text-white px-6 py-2 rounded-full font-semibold shadow-md" data-tab="harian">Sewa Harian</button>
+          <button class="tab-button bg-white text-blue-600 px-6 py-2 rounded-full font-semibold border border-blue-600 hover:bg-blue-100" data-tab="mingguan">Sewa Mingguan</button>
+        </div>
+
+        <div id="harian-content" class="tab-content grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-blue-600 hover-lift transition duration-500">
+            <h3 class="text-2xl font-bold mb-3">Paket Standar</h3>
+            <p class="text-gray-500 mb-4">Untuk acara kecil dan koordinasi tim.</p>
+            <div class="text-4xl font-extrabold text-gray-900 mb-6">Rp 25.000<span class="text-base font-normal text-gray-500">/hari/unit</span></div>
+            <ul class="text-left text-gray-600 space-y-2 mb-8">
+              <li>✅ HT + Baterai</li>
+              <li>✅ Charger per 2 Unit</li>
+              <li>✅ Jangkauan Standar</li>
+              <li class="text-gray-400">❌ Earpiece Premium</li>
+            </ul>
+            <a href="#pemesanan" class="w-full block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300">Pesan Sekarang</a>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-red-500 hover-lift transition duration-500 scale-105">
+            <span class="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">Paling Populer</span>
+            <h3 class="text-2xl font-bold mb-3">Paket Premium (Min. 10 Unit)</h3>
+            <p class="text-gray-500 mb-4">Solusi lengkap untuk event besar.</p>
+            <div class="text-4xl font-extrabold text-gray-900 mb-6">Rp 22.000<span class="text-base font-normal text-gray-500">/hari/unit</span></div>
+            <ul class="text-left text-gray-600 space-y-2 mb-8">
+              <li>✅ HT + Baterai Cadangan</li>
+              <li>✅ Earpiece Premium 🎧</li>
+              <li>✅ Jangkauan Luas</li>
+              <li>✅ Antar-Jemput Gratis*</li>
+            </ul>
+            <a href="#https://wa.me/6285186072004" class="w-full block px-6 py-3 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition duration-300">Pesan Sekarang</a>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-blue-600 hover-lift transition duration-500">
+            <h3 class="text-2xl font-bold mb-3">Diskon Jangka Panjang</h3>
+            <p class="text-gray-500 mb-4">Sewa di atas 5 hari, dapatkan diskon spesial.</p>
+            <div class="text-4xl font-extrabold text-gray-900 mb-6">Diskon 15%</div>
+            <ul class="text-left text-gray-600 space-y-2 mb-8">
+              <li>✅ Berlaku min. 5 Hari</li>
+              <li>✅ Berlaku Semua Paket</li>
+              <li>✅ Dukungan Teknis 24/7</li>
+              <li>✅ Syarat & Ketentuan Berlaku</li>
+            </ul>
+            <a href="https://wa.me/6285186072004" target="_blank" class="w-full block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300">Hubungi Kami</a>
+          </div>
+        </div>
+
+        <div id="mingguan-content" class="tab-content hidden grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="md:col-start-2 bg-white p-8 rounded-xl shadow-2xl border-t-4 border-blue-600">
+            <h3 class="text-2xl font-bold mb-3">Sewa Mingguan (7 Hari)</h3>
+            <p class="text-gray-500 mb-4">Harga super hemat untuk proyek mingguan.</p>
+            <div class="text-4xl font-extrabold text-gray-900 mb-6">Rp 120.000<span class="text-base font-normal text-gray-500">/unit/minggu</span></div>
+            <ul class="text-left text-gray-600 space-y-2 mb-8">
+              <li>✅ Hemat lebih dari 30%</li>
+              <li>✅ Sudah Termasuk Baterai Cadangan</li>
+              <li>✅ Layanan Pengambilan & Pengembalian</li>
+            </ul>
+            <a href="https://wa.me/6285186072004" target="_blank" class="w-full block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300">Pesan Mingguan</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="lokasi" class="py-16 bg-blue-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Lokasi Pengambilan & Pengembalian HT</h2>
+        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Anda dapat mengambil unit HT langsung di tempat kami. Klik tombol di bawah untuk melihat lokasi di peta.</p>
+
+        <div class="max-w-4xl mx-auto bg-blue-50 p-8 rounded-xl shadow-lg border-2 border-blue-600">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4"></h3>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.751169470844!2d106.72548237385891!3d-6.296394961622229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1d815e0610b%3A0xb084ec1201d03f5d!2sSewa%20HT%20Bintaro%20BSD%20Pamulang%20Tangsel%20Serpong!5e0!3m2!1sen!2sid!4v1758973028311!5m2!1sen!2sid"
+            class="w-full h-96 rounded-lg mb-6"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <a href="https://maps.app.goo.gl/4zLTNSuPF8uvHoje9" target="_blank" class="px-8 py-3 bg-blue-600 text-white font-bold text-lg rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"> Buka di Google Maps </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-10">Pertanyaan Umum (FAQ)</h2>
+        <div class="max-w-3xl mx-auto space-y-4">
+          <div class="accordion-item border border-gray-200 rounded-lg overflow-hidden">
+            <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 text-left font-semibold hover:bg-gray-100 transition duration-300">
+              Berapa biaya sewa minimal?
+              <span class="text-xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 text-gray-600 bg-white hidden">
+              <p>Kami tidak memiliki minimum unit untuk disewa, namun terdapat minimum hari sewa yaitu 1 hari.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item border border-gray-200 rounded-lg overflow-hidden">
+            <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 text-left font-semibold hover:bg-gray-100 transition duration-300">
+              Apakah sudah termasuk earpiece?
+              <span class="text-xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 text-gray-600 bg-white hidden">
+              <p>Ya, semua penyewaan Walkie Talkie kami sudah termasuk earpiece.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item border border-gray-200 rounded-lg overflow-hidden">
+            <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 text-left font-semibold hover:bg-gray-100 transition duration-300">
+              Bagaimana jika ada kerusakan atau kehilangan?
+              <span class="text-xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 text-gray-600 bg-white hidden">
+              <p>Penyewa bertanggung jawab penuh atas kerusakan atau kehilangan. Biaya penggantian akan dihitung berdasarkan harga pasar unit HT dan aksesoris yang rusak/hilang.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item border border-gray-200 rounded-lg overflow-hidden">
+            <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 text-left font-semibold hover:bg-gray-100 transition duration-300">
+              Berapa meter jangkauan HT?
+              <span class="text-xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 text-gray-600 bg-white hidden">
+              <p>HT yang kami sewakan memiliki jangkauan hingga 500 meter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 Sewa HT Bintaro BSD Pamulang Serpong.</p>
+        <!-- <div class="mt-4 flex justify-center space-x-6">
+          <a href="#" class="hover:text-blue-400">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-blue-400">Syarat & Ketentuan</a>
+        </div> -->
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
